@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Infos personnelles</legend>
+        <form method="post" action="monProgramme.php">
+            <label for="prenom">Prénom:</label>
+            <input type="text" name="prenom" placeholder="Entrez un prénom" maxlength="20" id="prenom">
+        <br>
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" placeholder="Entrez un nom" maxlength="20" id="nom">
+        <br>
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="Entrez votre email" id="email">
+        <br>
+            <label for="numero">Numéro</label>
+            <input type="text" name="numero" placeholder="Entrez votre téléphone" id="numero">
+        <br>
+            <label for="motdepasse">Mot de Passe</label>
+            <input type="password" name="motDePasse" placeholder="Ex: p@ssWo4d">
+        <br>
+            <label for="numeroDeRue"> Numéro de rue</label>
+            <input type="number" name="numeroDeRue" placeholder="Ex: 15">
+        <br>
+            <label for="text">Explication</label>
+            <textarea placeholder="unTresLongTexte"></textarea>
+        <br>
+            <label for="date">Date de naissance</label>
+            <input type="date" name="date">
+        <br>
+            <label for="file">Documents à télécharger</label>
+            <input type="file" accept=".png, .jpg, .gif" name="file">
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Vous préférez</legend>
+        <br>
+            <label for="leHtml">Le HTML</label>
+            <input type="checkbox" id="checkbox" name="leHtml">
+        <br>
+            <label for="leCss">Le CSS</label>
+            <input type="checkbox" id="checkbox2leCss" name="leCss">
+        <br>
+            <label for="leJavaScript">Le JavaScript</label>
+            <input type="checkbox" id="checkbox3leJavaScript" name="leJavaScript">
+        <br>
+            <label for="neRienFaire">Ne rien faire</label>
+            <input type="checkbox" id="checkbox4neRienFaire" name="neRienFaire">
+    </fieldset>
+    <fieldset>
+        <legend>Vous vous levez</legend>
+            <label for="leMatin">Le matin</label>
+            <input type="radio" id="leMatin" name="leMatin" value="leMatin">
+        <br>
+            <label for="leMidi">Le midi</label>
+            <input type="radio" id="leMidi" name="leMidi" value="leMidi">
+        <br>
+            <label for="leSoir">Le soir</label>
+            <input type="radio" id="leSoir" name="leSoir" value="leSoir">
+        <br>
+            <label for="enRetard">En retard</label>
+            <input type="radio" id="enRetard" name="enRetard" value="enRetard">
+    </fieldset>
+    <fieldset>
+        <legend>Fin du formulaire</legend>
+
+        <br>
+        <label for="liste">Vous en avez assez?</label>
+        <select name="liste" id="liste">
+            <optgroup label="Team pas encore">
+                <option value="jenVeuxPlus">J'en veux plus</option>
+                <option value="cestSuper">C'est super</option>
+            </optgroup>
+            <optgroup label="Team Oula">
+                <option value="jenAieMarre">J'en aie marre</option>
+                <option value="pitie">Pitié</option>
+            </optgroup>
+            <br>
+        <input type="submit" value="Envoyer">
+
+    </form>
+
+
+</body>
+</html>
